@@ -1,6 +1,6 @@
 /*
  * Lab 3, Task 2
- * Student Name, Student ID
+ * Amr Mohamed Henidy Henidy Farh  , 241ADB059
  *
  * Practice using pointers as function parameters.
  * Implement:
@@ -38,9 +38,14 @@ int main(void) {
 
 // Implement functions below
 void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+
     // TODO: swap values using a temporary variable
 }
 
 void modify_value(int *x) {
+    *x = *x *2;
     // TODO: multiply value by 2
 }
